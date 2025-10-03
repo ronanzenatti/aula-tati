@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bússola de Carreira: Descubra seu Norte</title>
+
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- SortableJS para drag and drop -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.6/Sortable.min.js"></script>
+
+    <link rel="shortcut icon" href="/imgs/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div id="app" class="full-screen tela-inicial">
+
+        <a class="fullscreen-btn waves-effect waves-light" onclick="toggleTelaCheia()">
+            <!-- Ícone para entrar (visível por padrão) -->
+            <i class="material-icons" id="fullscreen-enter-icon">fullscreen</i>
+            <!-- Ícone para sair (oculto por padrão) -->
+            <i class="material-icons hidden-icon" id="fullscreen-exit-icon">fullscreen_exit</i>
+        </a>
+        <div class="quiz-container">
+            <img style="max-width: 80%;" src="imgs/logo.png" alt="Logo CPS">
+            <h1 style="margin-top: 0;">Descubra seu Norte!</h1>
+            <p class="descricao">
+                Descubra sua bússola pessoal! <br><br>
+
+                Por meio de perguntas reflexivas, você irá identificar traços de propósito, criatividade,
+                impacto e oportunidades de reinvenção ao longo do seu caminho.
+
+            </p>
+
+            <p class="descricao">
+                <i class="material-icons">timer</i> Tempo estimado: 5-10 minutos<br>
+                <i class="material-icons">security</i> Suas respostas são anônimas e não são armazenadas
+            </p>
+            <button class="btn btn-grande waves-effect waves-light white black-text" onclick="iniciarQuiz()">
+                Começar Jornada
+                <i class="material-icons right">arrow_forward</i>
+            </button>
+            <br>
+            <a class="btn btn-grande waves-effect waves-light white-text z-depth-5  red darken-1"
+                 target="_blank" href="https://carreiras.cps.sp.gov.br/">
+                Conheça o CPS Carreiras
+                <i class="material-icons left">explore</i>
+            </a>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

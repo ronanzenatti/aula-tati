@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bússola de Carreira: Descubra seu Norte</title>
+
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- SortableJS para drag and drop -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.6/Sortable.min.js"></script>
+
+    <link rel="shortcut icon" href="/imgs/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <a class="fullscreen-btn waves-effect waves-light" onclick="toggleTelaCheia()">
+        <!-- Ícone para entrar (visível por padrão) -->
+        <i class="material-icons" id="fullscreen-enter-icon">fullscreen</i>
+        <!-- Ícone para sair (oculto por padrão) -->
+        <i class="material-icons hidden-icon" id="fullscreen-exit-icon">fullscreen_exit</i>
+    </a>
+    <div id="inicial" class="full-screen abertura">
+        <a class="fullscreen-btn waves-effect waves-light" onclick="toggleTelaCheia()">
+            <!-- Ícone para entrar (visível por padrão) -->
+            <i class="material-icons" id="fullscreen-enter-icon">fullscreen</i>
+            <!-- Ícone para sair (oculto por padrão) -->
+            <i class="material-icons hidden-icon" id="fullscreen-exit-icon">fullscreen_exit</i>
+        </a>
+        <div class="quiz-container">
+            <a class="btn btn-grande waves-effect waves-light white black-text z-depth-5" style="margin-top: 100px;"
+                href="quizz.html">
+                Desejo responder o quiz
+                <i class="material-icons right">assignment</i>
+            </a>
+            <a class="btn btn-grande waves-effect waves-light white-text z-depth-5  red darken-1"
+                style="margin-top: 20px;" target="_blank" href="https://carreiras.cps.sp.gov.br/">
+                Conheça o CPS Carreiras
+                <i class="material-icons left">explore</i>
+            </a>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
